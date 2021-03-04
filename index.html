@@ -1,0 +1,44 @@
+<html>
+    <head></head>
+    <body>
+
+        <input type="text" id="nameTextBox" placeholder="Store Name" />
+        <input type="text" id="addressTextBox" placeholder="Store Address" />
+        <button id="addStoreButton">Add Store</button>
+        <h2>Stores List</h2>
+        <ul id="storesUL">
+
+        </ul>
+
+
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+            
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                 https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+               
+            <script>
+              // Your web app's Firebase configuration
+              // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+              var firebaseConfig = {
+                apiKey: "AIzaSyCI9ieyWxDYZAun_eSVQdcy4bfGtdLZimI",
+                authDomain: "assignment-9f948.firebaseapp.com",
+                projectId: "assignment-9f948",
+                storageBucket: "assignment-9f948.appspot.com",
+                messagingSenderId: "30004196258",
+                appId: "1:30004196258:web:f60efc23380c48728df8fb",
+                measurementId: "G-VLGWGYS7MX"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+              firebase.analytics();
+              
+              
+              var db = firebase.firestore();
+            </script>
+              
+            <script src="/Users/wesleykolar/Desktop/week5/day4/app.js"></script>
+    </body>
+</html>
